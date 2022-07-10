@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "33e62445-ca2c-4800-b38e-90b95bb6faa8",
+		"name": "Star-Blockchain-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1855602"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/block/height/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/block/height/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"block",
+						"height",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/requestValidation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\" : \"bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/requestValidation",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"requestValidation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/submitstar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\" : \"bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688\",\n\t\"message\" : \"bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688:1657424219:starRegistry\",\n\t\"signature\" : \"IDZRCtiFg9LyEDkfAWczs+I15vfV01cW+YD9gcCZ4lDSHGG6PHiy+043lzsvReqqvsH17LEQhvJI43ALY5DSkY4=\",\n\t\"star\" :{\n\t\t\"doc\": \"68* 52* 56.9\",\n\t\t\"ra\": \"16h 29m 1.0s\",\n\t\t\"story\": \"Testing the story 4\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/submitstar",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"submitstar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/block/hash/6278623c5af0be6594526b0bb0c530ee190da069cc0f7f0251e5806b03329dc0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/block/hash/6278623c5af0be6594526b0bb0c530ee190da069cc0f7f0251e5806b03329dc0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"block",
+						"hash",
+						"6278623c5af0be6594526b0bb0c530ee190da069cc0f7f0251e5806b03329dc0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/blocks/bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/blocks/bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"blocks",
+						"bc1qy24yv7u8yccyeqp47tjxnf9gtwl0d8w3dw9688"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

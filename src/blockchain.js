@@ -123,7 +123,7 @@ class Blockchain {
 
             try{
                 if((currentTime - time) < numberOfSeconds){
-                    let results = bitcoinMessage.verify(message, address, signature, null, true);
+                    let results = bitcoinMessage.verify(message, address, signature);
                     if(results){
                         let block = new BlockClass.Block({
                             data : star,
